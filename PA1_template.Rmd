@@ -12,7 +12,7 @@ knitr::opts_chunk$set(warning = FALSE, message = FALSE)
 
 ## Loading and preprocessing the data
 
-|   This section contains the code for loading the assignment data into R.
+This section contains the code for loading the assignment data into R.
 
 ```{r, echo = TRUE}
 
@@ -69,7 +69,7 @@ legend("topright", legend = c(paste("mean = ", mean_steps), paste("median = ", m
 
 ```
 
-|   The mean number of steps taken per day is `r mean_steps`. The median is `r median_steps`.
+The mean number of steps taken per day is `r mean_steps`. The median is `r median_steps`.
 
 
 ## What is the average daily activity pattern?
@@ -93,7 +93,7 @@ legend("topright", legend = paste("Interval at max = ", max_interval), lwd = 1, 
 
 ```
 
-|   The interval which contains the maximum number of steps averaged across all days is `r max_interval`.
+The interval which contains the maximum number of steps averaged across all days is `r max_interval`.
 
 ## Imputing missing values
 
@@ -131,7 +131,7 @@ legend("topright", legend = c(paste("mean = ", mean_steps), paste("median = ", m
 
 ```
 
-|   The dataset contains `r missing_values` missing values. In this section the missing values have been replaced with the mean of the respective 5-minute interval across all days. The mean is now `r mean_steps` and the median is `r median_steps`. There is quite a significant change from the first part of the assignment. The two values are now the same.
+The dataset contains `r missing_values` missing values. In this section the missing values have been replaced with the mean of the respective 5-minute interval across all days. The mean is now `r mean_steps` and the median is `r median_steps`. There is quite a significant change from the first part of the assignment. The two values are now the same.
 
 
 ## Are there differences in activity patterns between weekdays and weekends?
@@ -157,5 +157,5 @@ xyplot(steps ~ interval | weekday_type, data = df_weekdays_average, type = "l", 
 
 ```
 
-|   According to the plot, there is a difference in the patterns between weekdays and weekends. On weekdays, the activity starts earlier and has a higher spike in the first half of the day, but then it decreases more for the rest of the day. In weekends, activity starts later but maintains at a higher level for the entire day.
+According to the plot, there is a difference in the patterns between weekdays and weekends. On weekdays, the activity starts earlier and has a higher spike in the first half of the day, but then it decreases more for the rest of the day. In weekends, activity starts later but maintains at a higher level for the entire day.
 
